@@ -4538,7 +4538,8 @@ class PE:
                 except PEFormatError:
                     max_failed_entries_before_giving_up -= 1
                     if max_failed_entries_before_giving_up <= 0:
-                        export_parsing_loop_completed_normally = False                        break
+                        export_parsing_loop_completed_normally = False                        
+                        break
                     continue
 
             symbol_counts[(symbol_name, symbol_address)] += 1
